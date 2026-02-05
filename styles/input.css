@@ -1,1 +1,88 @@
 @import "tailwindcss";
+
+
+html::-webkit-scrollbar,
+.hide::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+* {
+    font-family: "Google Sans", sans-serif !important;
+}
+
+button {
+    cursor: pointer !important;
+}
+
+button:disabled {
+    cursor: not-allowed !important;
+}
+
+@theme {
+    --color-primary-50: #f4f7ee;
+    --color-primary-100: #e7eed9;
+    --color-primary-200: #d1dfb7;
+    --color-primary-300: #b3ca8c;
+    --color-primary-400: #97b467;
+    --color-primary-500: #82a34f;
+    --color-primary-600: #5e7838;
+    --color-primary-700: #495d2e;
+    --color-primary-800: #3c4b29;
+    --color-primary-900: #354126;
+    --color-primary-950: #1a2211;
+}
+
+.nav-link {
+    @apply text-base text-gray-700;
+}
+
+.nav-link:hover {
+    @apply text-primary-500!;
+}
+.nav-link.active {
+    @apply text-primary-500! font-semibold;
+}
+
+.hero__cta_animated {
+    @apply relative px-6 py-2.5 text-sm border-0 rounded-full inline-block text-primary-500;
+    box-shadow: 0 0 0 2px var(--color-primary-500);
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero__cta_animated span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: var(--color-primary-500);
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hero__cta_animated span:first-child {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__cta_animated:hover {
+    box-shadow: 0 0 0 2px var(--color-primary-500);
+    color: #ffffff;
+}
+
+.hero__cta_animated:active {
+    scale: 0.95;
+}
+
+.hero__cta_animated:hover span:last-child {
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+}
