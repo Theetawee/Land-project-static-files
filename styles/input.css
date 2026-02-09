@@ -1,14 +1,11 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 
-
 html::-webkit-scrollbar,
 .hide::-webkit-scrollbar,
 body::-webkit-scrollbar {
     display: none;
 }
-
-
 
 * {
     font-family: "Google Sans", sans-serif !important;
@@ -86,4 +83,37 @@ button:disabled {
     width: 150px;
     height: 150px;
     opacity: 1;
+}
+#price-range {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #e5e7eb;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: 0.2s;
+    transition: opacity 0.2s;
+}
+
+#price-range:hover {
+    opacity: 1;
+}
+
+#price-range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    @apply bg-primary-500;
+    cursor: pointer;
+}
+
+#price-range::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    @apply bg-primary-500;
+    cursor: pointer;
 }
