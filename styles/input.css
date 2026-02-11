@@ -74,7 +74,7 @@ button:disabled {
 }
 
 .hero__cta_animated {
-    @apply relative px-6 py-2.5 text-sm border-0 rounded-full inline-block text-primary-500;
+    @apply relative px-6 py-2 text-sm border-0 rounded-full inline-block text-primary-500;
     box-shadow: 0 0 0 2px var(--color-primary-500);
     cursor: pointer;
     overflow: hidden;
