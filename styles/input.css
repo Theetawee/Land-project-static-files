@@ -1,9 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/forms";
 
-
-
-
 /* Chrome, Edge, Safari */
 .scroll::-webkit-scrollbar {
     width: 10px;
@@ -23,12 +20,10 @@
     background-color: #6b7280;
 }
 
-
 .scroll {
     scrollbar-width: thin;
     scrollbar-color: #9ca3af #f3f4f6;
 }
-
 
 html::-webkit-scrollbar,
 body::-webkit-scrollbar,
@@ -49,17 +44,18 @@ button:disabled {
 }
 
 @theme {
-    --color-primary-50: #f4f7ee;
-    --color-primary-100: #e7eed9;
-    --color-primary-200: #d1dfb7;
-    --color-primary-300: #b3ca8c;
-    --color-primary-400: #97b467;
-    --color-primary-500: #82a34f;
-    --color-primary-600: #5e7838;
-    --color-primary-700: #495d2e;
-    --color-primary-800: #3c4b29;
-    --color-primary-900: #354126;
-    --color-primary-950: #1a2211;
+    --color-primary-50: #fffbeb;
+    --color-primary-100: #fdf3c8;
+    --color-primary-200: #fbe78c;
+    --color-primary-300: #f9d450;
+    --color-primary-400: #f7be1b;
+    --color-primary-500: #f1a20f;
+    --color-primary-600: #d67b09;
+    --color-primary-700: #b1560c;
+    --color-primary-800: #904410;
+    --color-primary-900: #763711;
+    --color-primary-950: #441b04;
+    --color-sec: #1b2b53;
 }
 
 .nav-link {
